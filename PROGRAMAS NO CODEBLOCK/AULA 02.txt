@@ -1,0 +1,52 @@
+EXERCICIOS - AULA 2 (LINGUAGEM DE PROGRAMAÇÃO)
+
+1) Escreva um programa que calcule o perímetro e a área de uma circunferência.
+
+-Área = PI * Raio * Raio
+-Perímetro = 2 * PI * Raio
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float area;
+    float perimetro;
+    float PI = 3.14;
+    float raio;
+
+    printf(" Digite o Raio da Circunferencia em centimetros: ");
+    scanf("%f", &raio);
+    printf("\n");
+
+    area = PI * (raio * raio);
+    perimetro = 2 * PI * raio;
+
+    printf(" A area da circunferencia eh %.2f centimetros quadrados.\n\n", area);
+    printf(" O perimetro da circunferencia eh %.2f centimetros. \n\n", perimetro);
+
+    return 0;
+}
+
+2) Crie esse programa: O programa deve solicitar, através da função scanf , um caractere 
+ao usuário e, em seguida, peça outro. Depois de introduzirmos ambos oscaracteres, o 
+programa deve mostrar os dois caracteres lidos entre aspas simples.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char letra1;
+    char letra2;
+
+    printf(" Digite a primeira letra: ");
+    scanf(" %c", &letra1);
+
+    printf(" Digite a segunda letra: ");
+    scanf(" %c", &letra2);
+
+    printf(" As letras digitadas sao: '%c' e '%c'. \n", letra1, letra2);
+
+    return 0;
+}
